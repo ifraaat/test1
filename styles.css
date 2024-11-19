@@ -1,0 +1,163 @@
+body {
+    background: url(https://t3.ftcdn.net/jpg/08/95/22/66/360_F_895226665_6AULkmrzM2t547mGnL9BEiYafavIEVwt.jpg) no-repeat center center fixed; 
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Стили контейнера */
+.container {
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+/* Стили заголовка */
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.4s;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title:hover {
+    color: #6b46c1;
+  
+}
+
+/* Стили формы добавления задач */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.add-task-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-task-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Стили списка задач */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* Стили кнопок "Delete" и "Completed" */
+.delete-btn {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+.expected-completion {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.complete-btn {
+    background-color: #33cc33;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.complete-btn:hover {
+    background-color: #2ca02c;
+}
+
+/* Стили кнопки "Clear All" */
+.clear-all-btn {
+    display: none;
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.clear-all-btn:hover {
+    background-color: #cc0000;
+}
+
+p {
+    color: rgb(166, 181, 167);
+    font-size: 13px;
+    margin-top: 20px;
+}  
+
+
+
+
+
+
+.large-text {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
